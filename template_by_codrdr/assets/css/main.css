@@ -1,0 +1,29 @@
+/* --- Reset --- */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Main Styles --- */
+
+header {
+    background: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: grid;
+}
+
+.header-content {
+    color: white;
+}
+
+.header-content h1 {
+    
+}
+
+.header-content a {
+    text-decoration: none;
+}

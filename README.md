@@ -1,5 +1,5 @@
-# photography-template
- Photography template with grid system by codrdr
+# Photography template
+ Photography template with grid system by me.
 
 # Image Credits
 

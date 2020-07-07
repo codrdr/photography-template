@@ -5,19 +5,26 @@
     <title>Berk's Photography</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <header id="header">
-        <div class="header-content">
+    <header>
+        <li id="open" onclick="openMenu();"><i class="fa fa-bars" aria-hidden="true"></i></li>
+        <li id="close" onclick="closeMenu();"><i class="fa fa-times" aria-hidden="true"></i></li>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#" onclick="closeMenu();">Home</a></li>
+                <li><a href="#portfolio" onclick="closeMenu();">Portfolio</a></li>
+                <li><a href="#services" onclick="closeMenu();">Services</a></li>
+                <li><a href="#about" onclick="closeMenu();">About</a></li>
+            </ul>
+        </div>
+        <div class="header-inner">
             <h1>Berk's Photography</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, accusamus.</p>
-            <a href="portfolio" class="btn">My work</a>
-            <a href="#hobby" class="btn">Hobby</a>
-            <a href="#wedding" class="btn">Wedding</a>
-            <a href="#nature" class="btn">Nature</a>
         </div>
     </header>
 
@@ -25,7 +32,7 @@
     <main class="grid">
 
         <!-- Portfolio -->
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <div class="portfolio-header">
                 <h2>Portfolio</h2>
             </div>
@@ -49,7 +56,7 @@
         </div>
 
         <!-- Services -->
-        <div class="services">
+        <div class="services" id="services">
             <div class="services-header">
                 <h2>Services</h2>
             </div>
@@ -83,6 +90,5 @@
     <footer class="grid">
         <h2>&#169; 2020 - <a href="github.com/codrdr">Cordrdr</a></h2>
     </footer>
-
-</body>
-</html>
+    <script src="assets/js/main.js"></script>
+</body></html>

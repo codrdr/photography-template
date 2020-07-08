@@ -3,7 +3,8 @@
 /* --- Reset --- */
 
 html,
-body {
+body,
+h2 {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -34,8 +35,6 @@ header {
     grid-gap: 10em;
     height: 100vh;
 }
-
-header p {}
 
 /* --- Sticky nav (it's inside the header) --- */
 
@@ -71,14 +70,15 @@ header p {}
 #open,
 #close {
     position: fixed;
-    font-size: 1.3em;
+    font-size: 1.2em;
     z-index: 10;
-    top: 1em;
+    top: 0.8em;
     left: 1em;
 }
 
 #open {
     display: block;
+    /*color: #AAAAAA;*/
 }
 
 #close {
@@ -91,12 +91,9 @@ header p {}
     cursor: pointer;
 }
 
-
-
-
-
-.portfolio {}
-
 .portfolio-header {
-    background-color:
+    text-align: center;
+    background-color: #ececec;
+    color: #202020;
+    padding: 0.8em;
 }

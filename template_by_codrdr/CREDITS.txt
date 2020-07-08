@@ -3,7 +3,8 @@
 All images I used courtesy of Unsplash (https://unsplash.com).
 
 Header image: 
-- Tomasz Sroka (https://unsplash.com/photos/CewT9iFBcgE)
+/* - Tomasz Sroka (https://unsplash.com/photos/CewT9iFBcgE) */
+- Aldain Austira (https://unsplash.com/photos/v0zVmWULYTg)
 
 Portfolio images:
 - Rahabi Khan (https://unsplash.com/photos/5uhMYkn5pHk)

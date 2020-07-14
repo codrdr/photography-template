@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Berk's Photography</title>
+    <title>Berk Photography</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="accordion();">
 
     <!--- Header --->
     <header>
@@ -23,7 +24,7 @@
             </ul>
         </div>
         <div class="header-inner">
-            <h1>Berk's Photography</h1>
+            <h1>Berk Photography</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, accusamus.</p>
         </div>
     </header>
@@ -36,20 +37,40 @@
             <div class="portfolio-header">
                 <h2>Portfolio</h2>
             </div>
-            <div class="photo">
-                <img src="assets/images/portfolio/1.jpg" target="_blank">
-                <h2>First</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, earum!</p>
-            </div>
-            <div class="photo">
-                <img src="assets/images/portfolio/2.jpg" target="_blank">
-                <h2>Second</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, minus.</p>
-            </div>
-            <div class="photo">
-                <img src="assets/images/portfolio/3.jpg" target="_blank">
-                <h2>Third</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, minus.</p>
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/images/portfolio/1.jpg" target="_blank">
+                </div>
+                <div class="card-img">
+                    <img src="assets/images/portfolio/2.jpg" target="_blank">
+                </div>
+                <div class="card-img" id="more">
+                    <img src="assets/images/portfolio/3.jpg" target="_blank">
+                    <button class="accordion"></button>
+                    <div class="accordion-inner">
+                        <div class="card-img">
+                            <img src="assets/images/portfolio/4.jpg" target="_blank">
+                        </div>
+                        <div class="card-img">
+                            <img src="assets/images/portfolio/5.jpg" target="_blank">
+                        </div>
+                        <div class="card-img">
+                            <img src="assets/images/portfolio/6.jpg" target="_blank">
+                        </div>
+                        <div class="card-img">
+                            <img src="assets/images/portfolio/7.jpg" target="_blank">
+                        </div>
+                        <div class="card-img">
+                            <img src="assets/images/portfolio/8.jpg" target="_blank">
+                        </div>
+                        <div class="card-img">
+                            <img src="assets/images/portfolio/9.jpg" target="_blank">
+                        </div>
+                        <div class="card-img">
+                            <img src="assets/images/portfolio/10.jpg" target="_blank">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -58,25 +79,45 @@
             <div class="services-header">
                 <h2>Services</h2>
             </div>
-            <div class="card" id="hobby">
-                <img src="assets/images/service/hobby.jpg" target="_blank">
-                <h2>Hobby photos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, minus.</p>
-            </div>
-            <div class="card" id="wedding">
-                <img src="assets/images/service/wedding.jpg" target="_blank">
-                <h2>Wedding photos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, minus.</p>
-            </div>
-            <div class="card" id="nature">
-                <img src="assets/images/service/nature.jpg" target="_blank">
-                <h2>Nature photos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, minus.</p>
+            <div class="card">
+                <div class="wedding">
+                    <p>Wedding photography</p>
+                    <div class="card-img" id="more">
+                        <img src="assets/images/services/wedding/1.jpg" target="_blank">
+                        <button class="accordion"></button>
+                        <div class="accordion-inner">
+                            <img src="assets/images/services/wedding/2.jpg">
+                            <img src="assets/images/services/wedding/3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="event">
+                    <p>Event photography</p>
+                    <div class="card-img" id="more">
+                        <img src="assets/images/services/event/1.jpg" target="_blank">
+                        <button class="accordion"></button>
+                        <div class="accordion-inner">
+                            <img src="assets/images/services/event/2.jpg">
+                            <img src="assets/images/services/event/3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="sports">
+                    <p>Sports photography</p>
+                    <div class="card-img" id="more">
+                        <img src="assets/images/services/sports/1.jpg" target="_blank">
+                        <button class="accordion"></button>
+                        <div class="accordion-inner">
+                            <img src="assets/images/services/sports/2.jpg">
+                            <img src="assets/images/services/sports/3.jpg">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!--- About --->
-        <div class="aboutme">
+        <div class="about" id="about">
             <h2>About me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero earum laudantium cumque praesentium porro, sed magnam id illum quia. Ipsa quas ea, modi. Veniam quibusdam, laudantium fugiat eius vitae earum?</p>
         </div>
@@ -85,7 +126,7 @@
 
     <!-- Footer -->
     <footer class="grid">
-        <h2>&#169; 2020 - <a href="github.com/codrdr">Cordrdr</a></h2>
+        <h2>2020 - <a href="github.com/codrdr" target="_blank">Cordrdr</a></h2>
     </footer>
 
     <script src="assets/js/main.js"></script>

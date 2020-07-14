@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 /* --- Reset --- */
 
 html,
-body {
+body,
+h2 {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 img {
@@ -17,7 +18,7 @@ img {
 /* --- Header --- */
 
 header {
-    background: url('../images/header.jpg');
+    background: url('../images/header1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -35,7 +36,14 @@ header {
     height: 100vh;
 }
 
-header p {}
+.header-inner p {
+    font-size: 1.3rem;
+    padding: 0em 2em 0em 2em;
+}
+
+.header-inner h1 {
+    font-size: 2.4rem;
+}
 
 /* --- Sticky nav (it's inside the header) --- */
 
@@ -45,6 +53,7 @@ header p {}
     height: 100%;
     background-color: #f3f3f3;
     display: none;
+    z-index: 10;
 }
 
 .menu ul {
@@ -59,26 +68,28 @@ header p {}
 
 .menu ul li a {
     text-decoration: none;
-    color: #000;
+    color: #3d2d2d;
+    font-size: 1.3rem;
 }
 
 .menu ul li a:hover {
     color: #484848;
 }
 
-/* --- Sticky nav buttons --- */
+/* --- Sticky nav icons --- */
 
 #open,
 #close {
     position: fixed;
-    font-size: 1.3em;
-    z-index: 10;
-    top: 1em;
+    font-size: 1.4rem;
+    z-index: 11;
+    top: 0.6em;
     left: 1em;
 }
 
 #open {
     display: block;
+    color: #fff;
 }
 
 #close {
@@ -91,12 +102,102 @@ header p {}
     cursor: pointer;
 }
 
+/* --- Portfolio & Services header --- */
 
+.portfolio-header,
+.services-header,
+.about {
+    text-align: center;
+    background-color: #ececec;
+    color: #202020;
+    padding: 1em;
+    -webkit-box-shadow: inset 0px 0px 34px -22px rgba(120, 120, 120, 1);
+    -moz-box-shadow: inset 0px 0px 34px -22px rgba(120, 120, 120, 1);
+    box-shadow: inset 0px 0px 34px -22px rgba(120, 120, 120, 1);
+}
 
+/* --- Image container --- */
 
+.card-img {
+    width: 100%;
+    height: auto;
+}
 
-.portfolio {}
+.card-img img {
+    display: block;
+}
 
-.portfolio-header {
-    background-color:
+#more {
+    position: relative;
+}
+
+/* --- Accordion --- */
+
+.accordion {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 1em 0em;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.4s;
+    position: absolute;
+    bottom: 0px;
+}
+
+.accordion:after {
+    font-family: FontAwesome;
+    content: "\f078";
+}
+
+.active:after {
+    font-family: FontAwesome;
+    content: "\f077";
+}
+
+.accordion-inner {
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+/* --- Wedding section --- */
+
+.wedding,
+.event,
+.sports {
+    position: relative;
+    width: 100%;
+}
+
+.wedding p,
+.event p,
+.sports p {
+    display: inline-block;
+    position: absolute;
+    width: inherit;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 0.4em 0em;
+}
+
+/* --- Footer --- */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }

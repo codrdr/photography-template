@@ -1,8 +1,10 @@
+# Info
+This template is only mobile-optimized yet.
+
 # Photography template
- Photography template with grid system by me.
+ Photography template with grid system.
 
 # Image Credits
-
 All images I used courtesy of Unsplash (https://unsplash.com).
 
 Header image:
